@@ -35,12 +35,18 @@ struct ListView: View {
         switch state {
             case .emptyQuery:
                 Text(Constants.searchForSomething)
+                    .font(.callout)
+                    .foregroundColor(.primary)
                     .opacity(0.5)
+
             case .emptyResults:
                 Text(Constants.noResults)
+                    .font(.callout)
+                    .foregroundColor(.primary)
 
             case .error:
                 Text(Constants.somethingWentWrong)
+                    .font(.callout)
                     .foregroundColor(.red)
 
             case .loading:

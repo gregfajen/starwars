@@ -24,6 +24,7 @@ struct ResourceView: View {
         HStack {
             Text(item.name)
                 .font(.system(.headline))
+                .foregroundColor(.black)
 
             Spacer()
 
@@ -75,10 +76,10 @@ struct ResourceTypeView: View {
 
     var body: some View {
         Text(text)
-            .foregroundColor(.white)
             .font(.system(.caption2))
+            .foregroundColor(.white)
             .padding(8)
-            .background(.primary)
+            .background(.tint)
             .cornerRadius(.greatestFiniteMagnitude)
     }
 
@@ -91,6 +92,7 @@ struct PersonView: View {
     var body: some View {
         Text(person.name)
             .font(.system(.body))
+            .foregroundColor(.black)
             .frame(height: 40)
     }
 
