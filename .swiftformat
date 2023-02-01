@@ -1,0 +1,20 @@
+--swiftversion 5.7
+
+--exclude Pods, vendor
+
+--disable blankLinesAtStartOfScope, blankLinesAtEndOfScope, wrapMultilineStatementBraces
+
+--indent 4 
+--indentcase true
+--xcodeindentation false
+
+--commas inline
+
+--emptybraces spaced
+
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--closingparen balanced
+
+--header strip
